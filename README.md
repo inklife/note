@@ -4,4 +4,4 @@
 
 - 准备用flutter重写
 
-[Previous](./tree/cordova)
+[Previous](https://github.com/shuang6/inknote/tree/cordova)
