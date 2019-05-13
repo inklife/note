@@ -36,6 +36,19 @@ android {
         applicationId "com.example.flutter_app"
         minSdkVersion 16
         targetSdkVersion 28
+        // ndk {
+        //     // abiFilters "armeabi-v7a"
+        //     abiFilters "armeabi", "x86", "armeabi-v7a"
+        //    // abiFilters "armeabi-v7a", "arm64-v8a", "x86", "x86_64"
+        // }
+        // splits {
+        //     abi {
+        //         enable true
+        //         reset()
+        //         include 'x86', 'armeabi-v7a','x86_64'
+        //         universalApk true
+        //     }
+        // }
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
