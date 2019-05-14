@@ -10,31 +10,41 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Hello, MD App.',
       home: Scaffold(
-        appBar: new AppBar(title: new Text('hahha')),
-        body: new ListView(
-          children: <Widget>[
-            new ListTile(
-              leading: new Icon(Icons.ac_unit),
-              title: new Text('ac_unit '),
+          appBar: new AppBar(title: new Text('hahha')),
+          body: Center(
+            child: Container(
+              height: 200.0,
+              // alignment: Alignment.topLeft,
+              child: new MyList(),
             ),
-            new ListTile(
-              leading: new Icon(Icons.access_alarm),
-              title: new Text('access_alarm '),
-            ),
-            new ListTile(
-              leading: new Icon(Icons.account_balance),
-              title: new Text('account_balance '),
-            ),
-            new Image.network('https://www.baidu.com/img/bd_logo1.png?where=super'),
-            new Text(
-              'Some datas',
-              style: TextStyle(fontSize: 32.0, color: Colors.lightBlue),
-            ),
-            new Image.network('https://photo.tuchong.com/2311463/f/15113534.jpg'),
-          ],
-        )
-      ),
+          )),
     );
   }
-  
+}
+
+class MyList extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return new ListView(
+      scrollDirection: Axis.horizontal,
+      children: <Widget>[
+        Container(
+          width: 180.0,
+          color: Colors.lightBlueAccent,
+        ),
+        Container(
+          width: 180.0,
+          color: Colors.pink,
+        ),
+        Container(
+          width: 180.0,
+          color: Colors.amberAccent,
+        ),
+        Container(
+          width: 180.0,
+          color: Colors.greenAccent,
+        ),
+      ],
+    );
+  }
 }
